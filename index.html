@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="expenses.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+    <label for="expense">Enter Expense:</label>
+    <input type="text" id="expense" placeholder="Expense description" style="width: fit-content;">
+    <br>
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount" placeholder="Amount" style="width: fit-content;">
+    <br>
+    <button onclick="addExpense()">Add Expense</button>
+    <button onclick="resetFields()">Reset</button>
+
+    <div id="expenses">
+        <h2>Expenses</h2>
+        <ul id="expenseList" style="list-style-type: square; text-align: left; margin-left: 800px;"></ul>
+        <p>Total Expenses: ₹<span id="totalExpense">0.00</span></p>
+    </div>
+
+    <script src="expenses.js" defer></script>
+</body>
+</html>
